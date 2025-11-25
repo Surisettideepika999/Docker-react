@@ -8,6 +8,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    environment: docker-react-env
 
     steps:
       - name: Checkout repository
