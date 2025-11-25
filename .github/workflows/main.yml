@@ -22,4 +22,4 @@ jobs:
 
       - name: Run tests inside container
         run: |
-          docker run myapp-test npm run test -- --coverage
+          docker run -e CI=true myapp-test npm run test
